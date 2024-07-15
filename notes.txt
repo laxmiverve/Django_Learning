@@ -1,4 +1,5 @@
- uv venv -> To create a virtual envirnoment (https://pypi.org/project/uv/)
+ uv venv -> To create a virtual envirnoment. venv is virtual envirnoment name. (https://pypi.org/project/uv/) OR
+ python3 -m venv myvenv -> To create a virtual env. myvenv is virtual envirnoment name.
 
  source .venv/bin/activate -> To activate virtual envirnoment 
 
