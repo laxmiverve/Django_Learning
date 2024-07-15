@@ -1,0 +1,39 @@
+{% extends "layout.html" %} 
+
+This page served on - http://127.0.0.1:8000/demo
+{% comment %} <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This is the demo app of myProject</title>
+</head>
+<body>
+    <h1>This is the training class of Django</h1>
+</body>
+</html> {% endcomment %}
+
+
+{% block title %} Demo App Page
+{% endblock %}
+
+
+{% block content %}
+<h1>Home page for demo app</h1>
+
+{% for blog in blogs %}
+<div class = "blog-posts">
+    <img src="{{blog.image.url}}" alt="">
+    <h3>{{blog.name}}</h3>
+    <a href="{% url 'blog_detail' blog.id %}">
+        <button type = 'button'>
+        {{blog.type}} - {{blog.id}}
+        </button>
+    </a>
+</div>
+
+{% endfor %}
+
+{% endblock %}
+
+

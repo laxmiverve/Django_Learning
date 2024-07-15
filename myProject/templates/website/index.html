@@ -1,0 +1,28 @@
+{% extends "layout.html" %} 
+
+This page served on - http://127.0.0.1:8000/
+
+<!-- {% load static %} -->
+{% comment %} <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Django Learning</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}" />
+  </head>
+  <body>
+    <h1>This is the learning class of Django</h1>
+  </body>
+</html>
+{% endcomment %} 
+
+
+{% block title %} Home Page
+{% endblock %}
+
+
+{% block content %}
+<h1 class = "bg-orange-500 text-3xl">Django Learning - Home Page</h1>
+{% endblock %}
+
