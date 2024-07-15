@@ -30,7 +30,7 @@ urlpatterns = [
     path('about/', views.about, name = "About"), 
     path('contact/', views.contact, name = "Contact"),
 
-    # Transfer the control to the url.py of demo app
+    # Transfer the control to the url.py of demoApp 
     path('demo/', include('demoApp.urls')),
 
     path("__reload__/", include("django_browser_reload.urls")),
